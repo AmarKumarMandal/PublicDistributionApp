@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Distribution System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Important Notification Banner -->
+    <div class="notification-banner">
+        <p><strong>Important Announcement:</strong> The government has updated the subsidy rates for rice and wheat. Please check the latest information at your nearest fair price shop.</p>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>Public Distribution System</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="track.html">Track Ration Number</a></li>
+                    <li><a href="#ration-options">Actions</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Slideshow Section -->
+        <div class="slideshow">
+            <img src="images.jpeg" alt="Distribution Center" >
+            <img src="download.jpeg" alt="Stock Information" >
+            <img src="photo.jpeg" alt="Ration Card Holders" >
+        </div>
+
+        <section id="home">
+            <h2>About the Public Distribution System</h2>
+            <p>
+                The Public Distribution System (PDS) is an Indian food security system established by the Government of India. 
+                It distributes subsidized food and non-food items to India's poor. Major commodities distributed include staple food grains, 
+                sugar, and kerosene through a network of fair price shops.
+            </p>
+            <p>
+                The system aims to ensure food security and equitable distribution of resources. Beneficiaries receive their entitlements through 
+                ration cards. The system also helps in stabilizing prices and alleviating poverty in the country.
+            </p>
+
+            <!-- Information Table -->
+            <h3>Key Information</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Commodity</th>
+                        <th>Monthly Entitlement</th>
+                        <th>Price (per kg/liter)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rice</td>
+                        <td>5 kg</td>
+                        <td>₹3</td>
+                    </tr>
+                    <tr>
+                        <td>Wheat</td>
+                        <td>5 kg</td>
+                        <td>₹2</td>
+                    </tr>
+                    <tr>
+                        <td>Sugar</td>
+                        <td>2 kg</td>
+                        <td>₹13.50</td>
+                    </tr>
+                    <tr>
+                        <td>Kerosene</td>
+                        <td>5 liters</td>
+                        <td>₹15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Parallel Horizontal Lines -->
+        <hr class="line">
+        <hr class="line">
+
+        <!-- Ration Registration and Tracking Section -->
+        <section id="ration-options" class="buttons-section">
+            <h2>Actions</h2>
+            <div>
+                <h3>Register Ration Number</h3>
+                <a href="register.html">
+                    <button>Register Ration Number</button>
+                </a>
+            </div>
+            <div>
+                <h3>Live Updates</h3>
+                <a href="live-updates.html" target="_blank">
+                    <button>Live Updates</button>
+                </a>
+            </div>
+            <div>
+                <h3>Track Ration Status</h3>
+                <a href="track.html">
+                    <button>Track Ration Status</button>
+                </a>
+            </div>
+            <div>
+                <h3>Nearby Centers</h3>
+                <a href="nearby-centers.html" target="_blank">
+                    <button>Nearby Centers</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="contactName">Your Name:</label>
+                <input type="text" id="contactName" name="contactName" required>
+
+                <label for="contactEmail">Your Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+
+                <label for="contactIssue">Your Issue:</label>
+                <textarea id="contactIssue" name="contactIssue" rows="4" required placeholder="Please describe your issue here..."></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="contactMessage"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024-30 Amar Kumar Mandal. All rights reserved.</p>
+        <p>
+            This website is designed to streamline the public distribution system, providing real-time updates, 
+            nearby center information, and a convenient way to register and track ration numbers.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Ration Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Register Ration Number</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#track">Track Ration Number</a></li>
+                    <li><a href="index.html#live-updates">Live Updates</a></li>
+                    <li><a href="index.html#nearby-centers">Nearby Centers</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h2>Enter Ration Number and Holder Details</h2>
+            <form id="rationForm">
+                <label for="rationNumber">Ration Number:</label>
+                <input type="text" id="rationNumber" name="rationNumber" required>
+
+                <label for="holderName">Holder Name:</label>
+                <input type="text" id="holderName" name="holderName" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" name="contact" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" name="pincode" required>
+
+                <button type="submit">Register</button>
+            </form>
+
+            <button id="deleteAllButton">Delete All Registered Data</button>
+
+            <div id="registeredData"></div>
+        </section>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

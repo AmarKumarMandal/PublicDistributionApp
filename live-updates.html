@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Updates - Distribution Centers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Live Updates</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="track.html">Track Ration Number</a></li>
+                    <li><a href="nearby-centers.html">Nearby Centers</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h2>Available Commodities in Nearby Distribution Centers</h2>
+
+            <!-- Table for Live Updates -->
+            <table id="live-updates-table">
+                <thead>
+                    <tr>
+                        <th>Center Name</th>
+                        <th>Rice (kg)</th>
+                        <th>Wheat (kg)</th>
+                        <th>Sugar (kg)</th>
+                        <th>Kerosene (liters)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024-30 Amar Kumar Mandal. All rights reserved.</p>
+        <p>
+            This page shows the live inventory status of nearby distribution centers.
+        </p>
+    </footer>
+
+    <script>
+        // Simulated live data for nearby distribution centers
+        const liveData = [
+            {
+                center: "Center 1",
+                rice: 150,
+                wheat: 100,
+                sugar: 50,
+                kerosene: 200
+            },
+            {
+                center: "Center 2",
+                rice: 120,
+                wheat: 80,
+                sugar: 40,
+                kerosene: 180
+            },
+            {
+                center: "Center 3",
+                rice: 180,
+                wheat: 150,
+                sugar: 70,
+                kerosene: 220
+            }
+        ];
+
+        // Function to populate the table with live data
+        function populateLiveUpdates() {
+            const tableBody = document.getElementById('live-updates-table').getElementsByTagName('tbody')[0];
+            liveData.forEach((data) => {
+                const row = tableBody.insertRow();
+                row.insertCell(0).textContent = data.center;
+                row.insertCell(1).textContent = `${data.rice} kg`;
+                row.insertCell(2).textContent = `${data.wheat} kg`;
+                row.insertCell(3).textContent = `${data.sugar} kg`;
+                row.insertCell(4).textContent = `${data.kerosene} liters`;
+            });
+        }
+
+        // Populate the table when the page loads
+        window.onload = populateLiveUpdates;
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "registeredData": [
+        {
+            "rationNumber": "12345",
+            "holderName": "John Doe"
+        },
+        {
+            "rationNumber": "67890",
+            "holderName": "Jane Smith"
+        }
+    ]
+}
